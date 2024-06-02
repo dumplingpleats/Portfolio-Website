@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella Song's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: right;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .intro {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .bio {
+            font-size: 1em;
+            line-height: 1.5;
+            text-align: left;
+            margin: 20px 0;
+        }
+        .profile-photo {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .banner {
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #333;
+            padding: 15px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .banner p {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ella Song</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="art_media.html">Art Media</a>
+            <a href="coding_projects.html">Coding Projects</a>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <div class="name">Data Driven Design</div>
+            <div class="intro">Hello! Thanks for stopping by my portfolio!</div>
+            <p class="bio">
+                I'm Ella Song, a data-driven designer with versatile experience with Fashion, Media, and Technology Companies. Currently, I am completing a Fashion Technology Internship at Blackstone, 
+                and double majoring Computer Science and Psychology at Hunter College- projected to graduate December 2024. Previously, I have served as a Mentee at Bloomberg, a Data Science Intern at 
+                the Sadie Nash Leadership Project, and the CEO/Brand Designer for Fiber Femme, a handmade crochet and jewelry business featured in Material Grrrrlz Magazine. In my free time, I love contributing 
+                to the Queer Community by managing Go! Magazine's Pride Month operations and doing web design for Queer Athena, an event planning LLC.
+            </p>
+            <p>Feel free to explore my work in the Art Media and Coding Projects sections!</p>
+        </div>
+        <img src="IMG_2757.JPG" alt="Ella Song" class="profile-photo">
+    </section>
+    <div class="banner">
+        <p>★ Fashion at Blackstone ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Mentee at Bloomberg ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Fellow at Basta ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ CS and Psych at Hunter ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>★ Fashion at Blackstone ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Mentee at Bloomberg ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Fellow at Basta ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ CS and Psych at Hunter ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <footer>
+        &copy; 2024 Ella Song
+    </footer>
+</body>
+</html>
