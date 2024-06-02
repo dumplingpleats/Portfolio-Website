@@ -5,19 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Media - Ella Song's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: right;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .photo {
+            flex: 1 1 calc(20% - 10px);
+            box-sizing: border-box;
+            margin: 5px;
+            text-align: center;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .photo h3, .photo p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Ella Song's Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="art_media.html">Art Media</a>
+            <a href="coding_projects.html">Coding Projects</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="art_media.html">Art Media</a>
-        <a href="coding_projects.html">Coding Projects</a>
-    </nav>
     <section>
         <h2>Art Media</h2>
-        <p>Welcome to my Art Media section. Here you will find a collection of my artistic endeavors.</p>
+        <div class="gallery">
+            <div class="photo">
+                <img src="art media pics/IMG_3857.jpg" alt="Artwork 1">
+                <h3>No-Sew Weiner Dog Amigurumi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5319.jpg" alt="Artwork 2">
+                <h3>Red Ladybug and Pearl Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5360.jpg" alt="Artwork 3">
+                <h3>Gold Leaf and Pearl Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5367.jpg" alt="Artwork 4">
+                <h3>Rose Quartz and Pearl Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5388.jpg" alt="Artwork 5">
+                <h3>Green Ladybug and Pearl Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5391.jpg" alt="Artwork 6">
+                <h3>Lime Green Frog Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5405.jpg" alt="Artwork 7">
+                <h3>Red Ladybug Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5412.jpg" alt="Artwork 8">
+                <h3>Lilac Ladybug and Microcrochet Flower Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5424.jpg" alt="Artwork 9">
+                <h3>Blue Glass Bead and Microcrochet Flower Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="photo">
+                <img src="art media pics/IMG_5448.jpg" alt="Artwork 10">
+                <h3>Rose Quartz Stack Earrings</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
     </section>
     <footer>
         &copy; 2024 Ella Song
