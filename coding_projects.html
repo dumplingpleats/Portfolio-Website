@@ -5,22 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Projects - Ella Song's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: right;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .project-list a {
+            text-decoration: none;
+            color: #333;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Ella Song's Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="art_media.html">Art Media</a>
+            <a href="coding_projects.html">Coding Projects</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="art_media.html">Art Media</a>
-        <a href="coding_projects.html">Coding Projects</a>
-    </nav>
     <section>
         <h2>Coding Projects</h2>
-        <p>Welcome to my Coding Projects section. Here you will find a showcase of my programming work.</p>
+        <ul class="project-list">
+            <li>
+                <h3><a href="https://github.com/dumplingpleats/OS-Sim" target="_blank">OS Sim</a></h3>
+                <p>An Operating Systems Simulation using encapsulation to model Processes and Disks.</p>
+            </li>
+            <li>
+                <h3><a href="https://github.com/dumplingpleats/Algorithmic-Adventures" target="_blank">Algorithmic Adventures</a></h3>
+                <p>A game in C++ using Abstract Data Types and Polymorphism.</p>
+            </li>
+            <li>
+                <h3><a href="https://github.com/dumplingpleats/Sorting-Functions" target="_blank">Sorting Functions</a></h3>
+                <p>5 Number Summary Program using Counting Sort, Std::Sort, and two Quicksort Implementations.</p>
+            </li>
+        </ul>
     </section>
     <footer>
         &copy; 2024 Ella Song
     </footer>
 </body>
 </html>
+
