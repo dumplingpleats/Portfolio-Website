@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Song's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Basic styling for the body */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* Header styling */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color: #ff0000;
             color: #fff;
             padding: 10px 20px;
         }
+
         header h1 {
             margin: 0;
         }
+
+        /* Navigation styling */
         nav {
             text-align: right;
         }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
         }
+
+        /* Main section styling */
         section {
             display: flex;
             justify-content: space-around;
@@ -40,44 +50,84 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
         .intro {
             font-size: 1.5em;
             margin-bottom: 20px;
         }
+
         .name {
             font-size: 2em;
             font-weight: bold;
             margin: 20px 0;
         }
+
         .bio {
             font-size: 1em;
             line-height: 1.5;
             text-align: left;
             margin: 20px 0;
         }
+
         .profile-photo {
             width: 200px;
             height: auto;
             border-radius: 50%;
             margin: 20px;
         }
+
+        /* Banner styling */
         .banner {
             font-size: 1.2em;
             color: #fff;
-            background: linear-gradient(90deg, violet, indigo, blue, green, orange, red);
+            background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
             padding: 15px 0;
             overflow: hidden;
             white-space: nowrap;
             box-sizing: border-box;
             text-align: center;
         }
+
         .banner p {
             display: inline-block;
+            padding-left: 100%;
             animation: marquee 20s linear infinite;
         }
+
         @keyframes marquee {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(-100%, 0); }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #ff0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .profile-photo {
+                width: 150px;
+            }
         }
     </style>
 </head>
@@ -93,12 +143,12 @@
     <section>
         <div>
             <div class="name">Data Driven Design</div>
-            <div class="intro">Hello! Thanks for stopping by my portfolio mockup!</div>
+            <div class="intro">Hello! Thanks for checking out my portfolio mockup!</div>
             <p class="bio">
                 I'm Ella Song, a data-driven designer with versatile experience with Fashion, Media, and Technology Companies. Currently, I am completing a Fashion Technology Internship at Blackstone, 
                 and double majoring Computer Science and Psychology at Hunter College- projected to graduate December 2024. Previously, I have served as a Mentee at Bloomberg, a Data Science Intern at 
                 the Sadie Nash Leadership Project, and the CEO/Brand Designer for Fiber Femme, a handmade crochet and jewelry business featured in Material Grrrrlz Magazine. In my free time, I love contributing 
-                to the queer community by managing Go! Magazine's Pride Month operations and doing web design for Queer Athena, an event planning LLC.
+                to the queer community by managing Go! Magazine's Pride Month operations and web designing for Queer Athena, an event planning LLC.
             </p>
             <p>Feel free to explore my work and reach out at ellalasong@gmail.com!</p>
         </div>
@@ -113,3 +163,4 @@
     </footer>
 </body>
 </html>
+
