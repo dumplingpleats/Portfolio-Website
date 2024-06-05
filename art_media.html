@@ -4,57 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiber Femme - Ella Song's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Basic styling for the body */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* Header styling */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color: #ff0000;
             color: #fff;
             padding: 10px 20px;
         }
+
         header h1 {
             margin: 0;
         }
+
+        /* Navigation styling */
         nav {
             text-align: right;
         }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
         }
+
+        /* Main section styling */
         section {
             margin: 20px;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .photo {
             flex: 1 1 calc(20% - 10px);
             box-sizing: border-box;
             margin: 5px;
             text-align: center;
         }
+
         .photo img {
             max-width: 100%;
             height: auto;
             display: block;
         }
+
         .photo h3, .photo p {
             margin: 5px 0;
+        }
+
+        /* Banner styling */
+        .banner {
+            font-size: 1.2em;
+            color: #fff;
+            background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+            padding: 15px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .banner p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #ff0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .photo img {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -112,6 +180,10 @@
             </div>
         </div>
     </section>
+    <div class="banner">
+        <p>★ Fashion at Blackstone ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Bloomberg Mentee ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Basta Fellow ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ CS and Psych at Hunter ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Fiber Femme Founder ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Queer Athena Web Designer ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Go! Magazine Pride Operations ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>★ Fashion at Blackstone ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Bloomberg Mentee ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Basta Fellow ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ CS and Psych at Hunter ★&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Fiber Femme Founder ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Queer Athena Web Designer ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★ Go! Magazine Pride Operations ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
     <footer>
         &copy; 2024 Ella Song
     </footer>
